@@ -12,6 +12,8 @@ $ justhash -s "hello world!"
 
 ## installing
 
+justhash is also available on [crates.io](https://crates.io/crates/justhash)
+
 ### nix
 
 add the following input to your flake:
