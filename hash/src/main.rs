@@ -5,14 +5,14 @@ use sha256::digest;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    ///input to hash
+    ///string as input to hash
     #[arg(short, long)]
-    input: String,
+    string: String,
 }
 
 fn main() {
     let args = Args::parse();
-    let input = args.input;
+    let input = args.string;
     let output = digest(input);
     println!("{}", output);
 }
