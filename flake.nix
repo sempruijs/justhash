@@ -29,7 +29,7 @@
               extensions = [ "rust-src" "rust-analyzer" "clippy" ];
             };
             default = crane.stable.buildPackage {
-              src = ./.;
+              src = ./hash;
               cargoBuildCommand = "cargo build --release";
             };
           };
