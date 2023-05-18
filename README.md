@@ -26,6 +26,6 @@ and then adding it to home.packages
 
 ```nix
     home.packages = with pkgs; [
-      home.packages = with pkgs; [
+        inputs.justhash.packages.${pkgs.system}.default
     ]
 ```
